@@ -72,6 +72,10 @@ def questions():
     if not squats:
         squats = 0
 
+    conf_str = f"You entered {j_jacks} JJacks, {curls} Curls, {r_curls} RCurls, {h_curls} HCurls, {pushups} Pups, {ovr_curls} OVCurls, {windmills} Windmills, {w_pushups} WPups, {squats} Squats \n"
+    print(conf_str)
+    input("Press Enter to write this data, or ALT + C to escape.")
+
     with open("workout.csv", "a", newline="") as csv_file:
         # date = get_date()
         fieldnames = [
